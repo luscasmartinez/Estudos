@@ -1,9 +1,11 @@
-// Importa a classe Predicate do pacote java.util.function
+
 import java.util.function.Predicate;
 
 public class Predicado {
     public static void main(String[] args) {
-        // Cria um objeto da classe Produto com nome "Celular", preço 500.99 e quantidade 0
+        
+        //Documentação -> https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html
+
         Produto p = new Produto("Celular", 3500.99, 0.9);
     
         // Declara um predicado chamado isCaro que verifica se o preço do produto é maior ou igual a 1000
@@ -22,10 +24,6 @@ public class Predicado {
 
         System.out.print("Com desconto: ");
 
-        if (isCaroComDesconto.test(p)) {
-            System.out.println("É caro");
-        } else {
-            System.out.println("Não é caro");
-        }
+        System.out.println(isCaroComDesconto.test(p) ? "É caro" : "Não é caro");
     }
 }

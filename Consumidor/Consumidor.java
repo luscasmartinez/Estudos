@@ -5,6 +5,8 @@ import java.util.function.Consumer;
 public class Consumidor {
     public static void main(String[] args) {
         
+        //Documentação -> https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html
+        
         // Criação de um consumidor que imprime o nome do produto
         Consumer<Produto> imprimirNome = p -> System.out.println(p.nome);
 
